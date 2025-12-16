@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #d0c7c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("AwakenPatels.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.backgroundAboutAdmin {
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("Background-about-admin.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.25);
+  position: relative;
+  background-attachment: fixed;
+  display: flex;}
+
+.fixed-bg-container {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("Background-about-admin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    overflow: hidden;
+}
+
+.cv-scroll-container {
+    position: absolute;
+    top: 120px;         
+    left: 100px;
+    right: 100px;
+    bottom: 70px;
+    overflow-y: auto;   
+    padding-right: 20px; 
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.contact {
+    position: absolute;
+    top: 120px;         
+    left: 100px;
+    right: 100px;
+    bottom: 70px;
+    overflow-y: auto;   
+    padding-right: 20px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.contactText {
+    padding: 150px;
+    margin-left: 100px;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.CVText {
+    padding: 40px;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+.top-nav {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    text-shadow: black;
+}
+
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px;        
+  width: auto;
+  object-fit: contain;
+  margin: 0;        /* FIXED */
+}
+
+.logo-text {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.menu li a:hover {
+  opacity: 1;
+}
+
+.backgroundtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:blueviolet;
+    width: 100%;
+}
+
+.backgroundtext h1 {
+    font-size: 70px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  color: #da4646;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;           
+    display: inline-block;    
+}
+
+.logo-link:hover {
+    opacity: 0.8;             
+}
