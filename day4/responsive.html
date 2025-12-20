@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+
+<head>
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div style="background-color: #DE3163;">
+        <nav class="top-nav">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <ul class="menu" id="menu">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Life of Mountain</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Documents</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+
+            <h1> Frames From The Mountains </h1>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="item1">
+            <img src="./ViewOfVillage.jpg">
+
+        </div>
+        <div class="item2">
+            <img src="./Mountain-1.jpg">
+        </div>
+        <div class="item3">
+            <img src="./Mountain2.jpg">
+
+        </div>
+        <div class="item4">
+            <img src="./MountainAndClouds.jpg">
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3 style="font-family: 'Lucida Sans'">
+            copyright © Ramesh Bhattarai, 2025</h3>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }
+</script>
