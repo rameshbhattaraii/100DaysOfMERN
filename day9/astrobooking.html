@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kundali Consultation Booking</title>
+  <link rel="stylesheet" href="astrobooking.css">
+</head>
+<body>
+
+<div class="container">
+  <h3>🌙 Kundali Consultation Booking Form ☀️</h3>
+
+  <form id="bookingForm">
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Write your Full Name" required>
+
+    <label>Date of Birth (According to Kundali) </label>
+    <input type="date" id="dob" required>
+
+    <label>Time of Birth (Exact TOB is required)</label>
+    <input type="time" id="time" required>
+
+    <label>Place of Birth</label>
+    <input type="text" id="place" placeholder="Write the place name in detail of City, State and Country" required>
+
+    <label>Whatsapp Number</label>
+    <input type="number" id="phone" placeholder="Give your valid contact number" required>         
+
+    <label>Consultation Type</label>
+    <select id="service">
+      <option value="1000">One time consultaion – NPR 1000</option>
+      <option value="2000">Multiple consultaion - valid till a month – NPR 2000</option>
+    </select>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+  <!-- Payment Section -->
+  <div id="paymentBox" class="hidden">
+    <h2>💳 Pay for booking</h2>
+    <p>Scan the QR code and pay:</p>
+
+    <img src="QR-Code.jpg" alt="QR Code">
+
+    <p><strong>Amount:</strong> NPR <span id="amount"></span></p>
+    <label>Enter Payment or Transaction Code</label>
+    <input type="text" id="trCode" required>
+
+    <button onclick="confirmPayment()">I Have Paid</button>
+  </div>
+
+  <div id="successMsg" class="hidden">
+    <h2>✅ Booking Confirmed</h2>
+    <p style="text-align: center;">Thank you! Our Astrologer will contact you soon.</p>
+  </div>
+</div>
+
+<script src="astrobooking.js"></script>
+</body>
+</html>
